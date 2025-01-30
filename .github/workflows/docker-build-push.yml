@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Docker image with tag 21f2000588
         run: |
-          docker build -f docker/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/github-actions-test:21f2000588 .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/github-actions-test:21f2000588 .
 
       - name: Push Docker image
         run: |
